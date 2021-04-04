@@ -90,6 +90,7 @@ sub printpage1 {
         $text->translate(25/mm,  (($height-$vpos)/mm));
         $text->text($_);
         $vpos=$vpos+5;
+        last if $vpos>100;
       }
     }
 
